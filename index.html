@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-global">
+      <div class="nav-top">
+        <div class="utilisateur">
+          <p>John75</p>
+          <p>Connecté</p>
+        </div>
+      </div>
+      <div class="nav-second">
+        <div class="infos">
+          <img src="./ressources/avatar-shoes.jpg" alt="shoes" />
+          <span>Chaussure Femme Balenciaga </span>
+          <span><strong> 150€</strong></span>
+        </div>
+        <!-- 
+        <div class="utilisateur">
+          <p>John75</p>
+          <p>Connecté</p>
+        </div> -->
+
+        <div class="btns-offer-buy">
+          <button type="submit">Faire une offre</button>
+          <button type="submit">Acheter</button>
+        </div>
+      </div>
+      <div class="container-vendeur">
+        <div class="talk-profil left-profil">
+          <img src="ressources/avatar2.jpg" />
+          <div class="infos-vendeur">
+            <p>Aurelien75001</p>
+            <div class="evaluations">
+              <img class="star" src="./ressources/star-solid.svg" alt="star" />
+              <img class="star" src="./ressources/star-solid.svg" alt="star" />
+              <img class="star" src="./ressources/star-solid.svg" alt="star" />
+              <img class="star" src="./ressources/star-solid.svg" alt="star" />
+              <img class="star" src="./ressources/star-solid.svg" alt="star" />
+              <p>21 evaluations.</p>
+            </div>
+            <div class="location-vendeur">
+              <img
+                class="marker"
+                src="./ressources/map-marker-alt-solid.svg"
+                alt="marker icon"
+              />
+              <p>Paris, France</p>
+            </div>
+            <div class="vues-vendeur">
+              <img
+                class="vue"
+                src="./ressources/eye-regular.svg"
+                alt="vues icon"
+              />
+              <p>55 vues</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conversation">
+        <div class="talk left">
+          <img src="ressources/avatar2.jpg" />
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="talk right">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="ressources/avatar1.jpg" />
+        </div>
+        <div class="talk left">
+          <img src="ressources/avatar2.jpg" />
+          <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="talk right">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <img src="ressources/avatar1.jpg" />
+        </div>
+      </div>
+
+      <form class="chat-form">
+        <div class="container-inputs-stuffs">
+          <div class="files-logo-cont">
+            <img src="ressources/camera-solid.svg" />
+          </div>
+
+          <div class="group-inp">
+            <textarea
+              placeholder="Ecrire votre message ici"
+              minlength="1"
+              maxlength="1500"
+            ></textarea>
+          </div>
+
+          <button class="submit-msg-btn">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

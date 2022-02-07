@@ -1,0 +1,324 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.chat-global {
+  width: 1000px;
+  height: 875px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px 0px rgba(49, 49, 49, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+.nav-top {
+  position: absolute;
+  background: #fff;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.nav-second {
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  width: 100%;
+  height: 80px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding-bottom: 30px;
+}
+
+.location {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+.location img {
+  width: 30px;
+  margin-left: 10px;
+}
+.location p {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.utilisateur {
+  margin: 0 auto;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.utilisateur p:nth-child(1) {
+  font-size: 20px;
+}
+.utilisateur p:nth-child(2) {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.logos-call {
+  width: 100px;
+  display: flex;
+}
+.logos-call img {
+  margin-right: 20px;
+  width: 30px;
+}
+.infos {
+  /* width: 100px; */
+  display: flex;
+  align-items: center;
+}
+.infos span strong {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.infos img {
+  width: 60px;
+  margin-left: 10px;
+}
+.btns-offer-buy {
+  display: flex;
+  align-items: center;
+}
+.btns-offer-buy button {
+  margin-right: 15px;
+  padding: 12px 35px;
+  font-size: 18px;
+}
+
+/* **********Container vendeur********** */
+.container-vendeur {
+  width: 95%;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.left-profil {
+  display: flex;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.infos-vendeur {
+  background: #e7e7e7;
+  margin-left: 10px;
+  border-radius: 5px;
+  width: 35%;
+  font-size: 16px;
+}
+.talk-profil img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: auto;
+}
+.talk-profil p {
+  padding: 15px;
+  line-height: 5px;
+  border-radius: 5px;
+}
+.left-profil p:not(first-child) {
+  margin-left: -7px;
+  color: #000;
+  line-height: 1px;
+}
+.left-profil p:first-child {
+  margin-left: 4px;
+  color: #000;
+  line-height: 1px;
+}
+.evaluations,
+.location-vendeur,
+.vues-vendeur {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 15px;
+}
+.evaluations .star,
+.location-vendeur .marker,
+.vues-vendeur .vue {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+
+/* **********CONVERSATION********** */
+
+.conversation {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.talk {
+  margin: 20px 0;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  width: 50%;
+}
+.talk img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: auto;
+}
+
+.talk p {
+  padding: 15px;
+  line-height: 25px;
+  border-radius: 5px;
+  /* background: #000; */
+}
+.right {
+  margin-left: auto;
+}
+.right p {
+  margin-right: 10px;
+  background: #90111c;
+}
+.left p {
+  margin-left: 10px;
+  background: #eabeb0;
+  color: #000;
+}
+
+/* **********FORM********** */
+
+.chat-form {
+  flex-shrink: 0;
+  width: 100%;
+  height: 90px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-inputs-stuffs {
+  background: #fff;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.group-inp {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.group-inp img {
+  width: 30px;
+}
+.group-inp textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.files-logo-cont {
+  display: block;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.files-logo-cont img {
+  width: 30px;
+}
+
+.submit-msg-btn {
+  background: #fff;
+  width: 70px;
+  border: none;
+  display: flex;
+  padding-right: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .chat-global {
+    width: 319px;
+    height: 955px;
+  }
+  .talk {
+    font-size: 16px;
+    width: 100%;
+  }
+  .nav-second {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 170px;
+    line-height: 25px;
+  }
+  .infos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .btns-offer-buy button {
+    margin: 0 auto;
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+  .infos-vendeur {
+    width: 80%;
+    font-size: 14px;
+  }
+  .evaluations .star,
+  .location-vendeur .marker,
+  .vues-vendeur .vue {
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+  }
+}
